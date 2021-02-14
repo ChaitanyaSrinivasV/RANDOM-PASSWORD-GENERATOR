@@ -1,0 +1,31 @@
+#Importing Random module
+
+import random
+
+#Lower charecters
+
+lower='acdefghijklmnopqrstuvwxyz'
+
+#Upper charecters
+
+upper='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+#Number
+
+number='0123456789'
+
+#Special symbols 
+
+symbols='{}[]();:,.-_*$#'
+
+all=upper+lower+number+symbols
+
+#Asking the user to provide length of password
+
+length=int(input("Enter the password length?"))
+
+#password Generating
+
+password="".join(random.sample(all,length))
+
+print(password)
